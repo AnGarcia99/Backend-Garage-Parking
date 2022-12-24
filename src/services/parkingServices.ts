@@ -29,7 +29,7 @@ export const findByAmenities = (amenities: string): ParkingEntry[] | ParkingEntr
 
 export const addParking = (newParkingEntry: NewParkingEntry): ParkingEntry => {
   const newParking = {
-    id: Math.max(...parkings.map(d => d.id)) + 1,
+    id: parkings.length !== 0 ? Math.max(...parkings.map(d => d.id)) + 1 : 1,
     ...newParkingEntry
   }
   parkings.push(newParking)
