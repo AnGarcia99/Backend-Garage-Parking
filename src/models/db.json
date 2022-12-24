@@ -1,0 +1,98 @@
+[
+    {
+    "id": 1,
+    "address": "Calle A #35, California, CA",
+    "amenities": ["Cámaras de vigilancia", "Cajón techado", "Departamento", "Planta baja", "Estacionamiento cerrado", "Lugar en bateria"],
+    "score": 4.3,
+    "price": 1937.42,
+    "totalPrice": 23249.04,
+    "type": "Privado",
+    "images": [
+        {
+            "fileName": "image-1671864563740-106257091.jpg",
+            "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671864563740-106257091.jpg"
+        },
+        {
+            "fileName": "image-1671864563757-343190408.jpg",
+            "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671864563757-343190408.jpg"
+        },
+        {
+            "fileName": "image-1671864563766-660325753.jpg",
+            "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671864563766-660325753.jpg"
+        },
+        {
+            "fileName": "image-1671864563773-631032273.jpg",
+            "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671864563773-631032273.jpg"
+        },
+        {
+            "fileName": "image-1671864563781-689380732.jpg",
+            "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671864563781-689380732.jpg"
+        }
+    ],
+    "description": "This is the parking space A"
+    },
+    {
+        "id": 2,
+        "address": "Street B #27, California, CA",
+        "amenities": ["Cámaras de vigilancia", "Cajón techado", "Departamento", "Planta baja", "Estacionamiento cerrado", "Lugar en bateria"],
+        "score": 5,
+        "price": 3390.49,
+        "totalPrice": 40685.88,
+        "type": "Público",
+        "images": [
+            {
+                "fileName": "image-1671867318694-247019911.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867318694-247019911.jpg"
+            },
+            {
+                "fileName": "image-1671867318715-456388040.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867318715-456388040.jpg"
+            },
+            {
+                "fileName": "image-1671867318738-747708673.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867318738-747708673.jpg"
+            },
+            {
+                "fileName": "image-1671867318750-440119711.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867318750-440119711.jpg"
+            },
+            {
+                "fileName": "image-1671867318757-299605192.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867318757-299605192.jpg"
+            }
+        ],
+        "description": "This is the parking space B"
+    },
+    {
+        "id": 3,
+        "address": "Street C #7, California, CA",
+        "amenities": ["Cámaras de vigilancia", "Cajón techado", "Departamento", "Planta baja", "Estacionamiento cerrado", "Lugar en bateria"],
+        "score": 4,
+        "price": 3874.84,
+        "totalPrice": 46498.08,
+        "type": "Privado",
+        "images": [
+            {
+                "fileName": "image-1671867950566-231129430.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867950566-231129430.jpg"
+            },
+            {
+                "fileName": "image-1671867950581-271574860.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867950581-271574860.jpg"
+            },
+            {
+                "fileName": "image-1671867950590-520037053.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867950590-520037053.jpg"
+            },
+            {
+                "fileName": "image-1671867950603-728594718.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867950603-728594718.jpg"
+            },
+            {
+                "fileName": "image-1671867950620-618262486.jpg",
+                "path": "C:\\Users\\w10\\Desktop\\Backend-Garage-Parking-Andy-Garcia\\storage\\image-1671867950620-618262486.jpg"
+            }
+        ],
+        "description": "This is the parking space C"
+    }
+]
