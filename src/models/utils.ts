@@ -4,6 +4,10 @@ const isString = (string: string): boolean => {
   return typeof string === 'string'
 }
 
+const isStringArray = (string: any[]): boolean => {
+  return [string].every(i => typeof i === 'string')
+}
+
 const isNumber = (number: any): boolean => {
   return isNaN(number)
 }
@@ -25,7 +29,7 @@ const parseAddress = (addressFromRequest: any): string => {
 }
 
 const parseAmenities = (amenitiesFromRequest: any): string[] => {
-  if (!isString(amenitiesFromRequest)) {
+  if (!isStringArray(amenitiesFromRequest)) {
     throw new Error('Incorrect or missing Amenities')
   }
 

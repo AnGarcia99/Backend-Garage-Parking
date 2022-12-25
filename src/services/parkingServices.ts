@@ -33,20 +33,22 @@ export const addParking = (newParkingEntry: NewParkingEntry): ParkingEntry => {
     ...newParkingEntry
   }
   parkings.push(newParking)
+  const jsonParking = JSON.stringify(parkings)
+  fs.writeFileSync('./src/models/db.json', jsonParking, 'utf-8')
   return newParking
 }
 
-const equalsArray = (pathsCurrent: [], pathsFuture: []): boolean => {
+const equalsArray = (pathsCurrent: any[], pathsFuture: string[]): boolean => {
   return pathsCurrent.length === pathsFuture.length && pathsFuture.every(function (a, b) { return a === pathsCurrent[b] })
 }
 
 export const editParking = (id: number, newParkingEntry: NewParkingEntry): ParkingEntry => {
   const indexForParking = parkings.findIndex(d => d.id === id)
-  const pathCurrentImages = JSON.parse(JSON.stringify(parkings.find(d => d.id === id))).map((f: any) => f.images)
-  const pathFutureImages = JSON.parse(JSON.stringify(newParkingEntry)).map((f: any) => f.images)
-  if (!equalsArray(pathCurrentImages.fileName, pathFutureImages.fileName)) {
+  const CurrentImages = parkings.find(d => d.id === id)?.images.map(f => f)
+  const FutureImages = newParkingEntry.images
+  if (!equalsArray([CurrentImages?.map(f => f.fileName)], FutureImages.map(f => f.fileName))) {
     try {
-      pathCurrentImages?.path.map((file: fs.PathLike) => fs.unlinkSync(file))
+      CurrentImages?.map(f => f.path).map((file: fs.PathLike) => fs.unlinkSync(file))
     } catch (e) {
       console.error('Something wrong happened removing the files', e)
     }
@@ -55,17 +57,21 @@ export const editParking = (id: number, newParkingEntry: NewParkingEntry): Parki
     ...parkings[indexForParking],
     ...newParkingEntry
   }
+  const jsonParking = JSON.stringify(editParking)
+  fs.writeFileSync('./src/models/db.json', jsonParking, 'utf-8')
   return editParking
 }
 
 export const deleteParking = (id: number): ParkingEntry[] => {
   const indexForParking = parkings.findIndex(d => d.id === id)
-  const pathImages = JSON.parse(JSON.stringify(parkings.find(d => d.id === id))).map((f: any) => f.images)
+  const pathImages = parkings.find(d => d.id === id)?.images.map(f => f.path)
   try {
-    pathImages?.path.map((file: fs.PathLike) => fs.unlinkSync(file))
+    pathImages?.map((file: fs.PathLike) => fs.unlinkSync(file))
   } catch (e) {
     console.error('Something wrong happened removing the files', e)
   }
   parkings.slice(indexForParking, 1)
+  const jsonParking = JSON.stringify(parkings)
+  fs.writeFileSync('./src/models/db.json', jsonParking, 'utf-8')
   return parkings
 }

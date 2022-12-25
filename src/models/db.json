@@ -1,1 +1,119 @@
-[ ]
+[
+    {
+        "id": 1,
+        "address": "Street A #35, California, CA",
+        "amenities": [
+            "Cámaras de vigilancia",
+            "Cajón techado",
+            "Departamento",
+            "Planta baja",
+            "Estacionamiento cerrado",
+            "Lugar de bateria"
+        ],
+        "score": 4.5,
+        "price": 1937.42,
+        "totalPrice": 23249.04,
+        "type": "Público",
+        "images": [
+            {
+                "fileName": "image-1671934249430-397832491.jpg",
+                "path": "storage\\image-1671934249430-397832491.jpg"
+            },
+            {
+                "fileName": "image-1671934249484-977833004.jpg",
+                "path": "storage\\image-1671934249484-977833004.jpg"
+            },
+            {
+                "fileName": "image-1671934249523-394145487.jpg",
+                "path": "storage\\image-1671934249523-394145487.jpg"
+            },
+            {
+                "fileName": "image-1671934249547-88821594.jpg",
+                "path": "storage\\image-1671934249547-88821594.jpg"
+            },
+            {
+                "fileName": "image-1671934249578-457893613.jpg",
+                "path": "storage\\image-1671934249578-457893613.jpg"
+            }
+        ],
+        "description": "This is the parking space A"
+    },
+    {
+        "id": 2,
+        "address": "Street B #27, California, CA",
+        "amenities": [
+            "Cámaras de vigilancia",
+            "Sin cajón techado",
+            "Departamento",
+            "Planta baja",
+            "Estacionamiento cerrado",
+            "Lugar de bateria"
+        ],
+        "score": 4,
+        "price": 3390.49,
+        "totalPrice": 40685.88,
+        "type": "Privado",
+        "images": [
+            {
+                "fileName": "image-1671934830930-776542198.jpg",
+                "path": "storage\\image-1671934830930-776542198.jpg"
+            },
+            {
+                "fileName": "image-1671934830984-64492945.jpg",
+                "path": "storage\\image-1671934830984-64492945.jpg"
+            },
+            {
+                "fileName": "image-1671934831052-649577431.jpg",
+                "path": "storage\\image-1671934831052-649577431.jpg"
+            },
+            {
+                "fileName": "image-1671934831076-179365826.jpg",
+                "path": "storage\\image-1671934831076-179365826.jpg"
+            },
+            {
+                "fileName": "image-1671934831099-171957452.jpg",
+                "path": "storage\\image-1671934831099-171957452.jpg"
+            }
+        ],
+        "description": "This is the parking space B"
+    },
+    {
+        "id": 3,
+        "address": "Street C #7, California, CA",
+        "amenities": [
+            "Cámaras de vigilancia",
+            "Cajón techado",
+            "Departamento",
+            "Planta baja",
+            "Estacionamiento cerrado",
+            "Lugar de bateria"
+        ],
+        "score": 5,
+        "price": 3874.84,
+        "totalPrice": 46498.08,
+        "type": "Privado",
+        "images": [
+            {
+                "fileName": "image-1671935246472-831095014.jpg",
+                "path": "storage\\image-1671935246472-831095014.jpg"
+            },
+            {
+                "fileName": "image-1671935246513-325043792.jpg",
+                "path": "storage\\image-1671935246513-325043792.jpg"
+            },
+            {
+                "fileName": "image-1671935246543-866266412.jpg",
+                "path": "storage\\image-1671935246543-866266412.jpg"
+            },
+            {
+                "fileName": "image-1671935246576-660793561.jpg",
+                "path": "storage\\image-1671935246576-660793561.jpg"
+            },
+            {
+                "fileName": "image-1671935246620-792868226.jpg",
+                "path": "storage\\image-1671935246620-792868226.jpg"
+            }
+        ],
+        "description": "This is the parking space C"
+    }
+]

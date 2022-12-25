@@ -1,5 +1,4 @@
 node_modules
-storage/*
 !storage/.gitkeep
 build/
 .env

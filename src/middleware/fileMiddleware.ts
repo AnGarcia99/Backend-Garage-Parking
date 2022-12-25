@@ -2,7 +2,7 @@
 import { Request } from 'express'
 import multer, { diskStorage } from 'multer'
 
-const PATH_STORAGE = `${process.cwd()}/storage`
+const PATH_STORAGE = './storage'
 
 const storage = diskStorage({
   destination (_req: Request, _file: Express.Multer.File, cb: any) {
